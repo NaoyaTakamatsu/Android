@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lemonchiffon"
+    android:orientation="vertical" >
+    
+    <!-- 人数の入力行 -->
+
+    <!-- 金額の入力行 -->
+
+    <TextView
+        android:id="@+id/ranktextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="~Satisfaction~"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/saddlebrown" />
+
+    <Button
+        android:id="@+id/S"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_design_s"
+        android:drawableLeft="@drawable/kissicon"
+        android:onClick="Sclick"
+        android:text="Marverous"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_design_a"
+        android:drawableLeft="@drawable/smilebigicon"
+        android:onClick="Aclick"
+        android:text="Great"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/B"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_b"
+        android:drawableLeft="@drawable/smileicon"
+        android:onClick="Bclick"
+        android:text="Good"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/C"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_c"
+        android:drawableLeft="@drawable/plain"
+        android:onClick="Cclick"
+        android:text="Nomal"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/D"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_d"
+        android:drawableLeft="@drawable/sad"
+        android:onClick="Dclick"
+        android:text="Bad"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/X"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_x"
+        android:drawableLeft="@drawable/raspberry_icon"
+        android:onClick="Xclick"
+        android:text="Ramdam"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtOneMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kareMoney"
+            android:textColor="@color/dodgerblue"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txtkugiri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txtladyMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oneMoney"
+            android:textColor="@color/deeppink"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <!-- 結果の金額表示行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result"
+            android:textColor="@color/dodgerblue"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/txtYen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yen"
+            android:textColor="@color/dodgerblue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtkugiri2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/txtaite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXXX"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/deeppink"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txtladyyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="円"
+            android:textColor="@color/deeppink"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/kakutei"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_kakutei"
+        android:drawableLeft="@drawable/calculator"
+        android:text="@string/kakutei"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/rekobutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/syasinmode"
+        android:drawableLeft="@drawable/digital_camera"
+        android:text="Picture"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+</LinearLayout>

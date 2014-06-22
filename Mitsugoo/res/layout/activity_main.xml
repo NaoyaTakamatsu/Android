@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lemonchiffon"
+    android:orientation="vertical" >
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_unit_id"
+            ads:loadAdOnCreate="true"
+            ads:testDevices="TEST_EMULATOR" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/miseserchbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_design_mise"
+            android:drawableLeft="@drawable/search"
+            android:text="@string/omisesagasi_bottun"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/picturebutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_design_photo"
+            android:drawableLeft="@drawable/digital_camera"
+            android:text="Photo"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/tag"
+        android:ems="10"
+        android:hint="Title"
+        android:textColorHint="@color/saddlebrown"
+        android:textStyle="italic" >
+
+    <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editPrise"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/super_mario_coin"
+        android:ems="10"
+        android:hint="How much? "
+        android:textColorHint="@color/saddlebrown"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/mitsugu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_design_ogoru"
+            android:drawableLeft="@drawable/beer"
+            android:text="Dinner"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/presentbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_design_present"
+            android:drawableLeft="@drawable/gift"
+            android:text="Present"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtladyMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="~Date Log~"
+        android:textColor="@color/saddlebrown" />
+
+<ListView
+    android:id="@+id/contentlist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightpink"
+    android:divider="@color/black"
+    android:dividerHeight="2dp"
+    android:fadeScrollbars="false"
+    android:fastScrollEnabled="true"
+    android:overScrollFooter="@color/black"
+    android:overScrollHeader="@color/black"
+    android:scrollbarStyle="insideOverlay" />
+
+</LinearLayout>

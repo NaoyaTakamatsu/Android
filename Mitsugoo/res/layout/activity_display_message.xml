@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    tools:context=".DisplayMessageActivity" >
+
+    <Button
+        android:id="@+id/syasinOKbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_kakutei"
+        android:onClick="OK"
+        android:text="OK"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/score_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Score"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/saddlebrown"
+        android:textSize="50sp" />
+
+</LinearLayout>
